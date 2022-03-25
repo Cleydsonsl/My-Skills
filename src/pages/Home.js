@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, Platform, FlatList } from 'react-native';
+import { 
+  View, 
+  Text, 
+  StyleSheet, 
+  TextInput, 
+  Platform, 
+  FlatList, 
+  StatusBar 
+} from 'react-native';
+
 import { Button } from '../components/Button';
 import { SkillCard } from '../components/SkillCard';
 
@@ -13,6 +22,7 @@ export function Home(){
 
   return (
     <View style={styles.Container}>
+      <StatusBar barStyle='light-content'/>
       <Text style={styles.title}>Welcome, Cleydson</Text>
       <TextInput
         style={styles.input}
